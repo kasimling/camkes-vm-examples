@@ -28,7 +28,7 @@ assembly {
         };
 
         vm0.linux_image_config = {
-            "linux_bootcmdline" : "",
+            "linux_bootcmdline" : "earlycon=pl011,0x9000000 console=ttyAMA0 earlyprintk=serial,ttyS0,115200 debug ignore_loglevel",
             "linux_stdout" : "/pl011@9000000",
         };
         vm0.num_vcpus = 2;
